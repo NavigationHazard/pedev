@@ -1,6 +1,7 @@
 
 import React, {useRef, useContext} from 'react'
-import { ScrollContext } from "../utils/scroll-observer"
+import { ScrollContext } from '../utils/scroll-observer'
+import ScrollObserver from '../utils/scroll-observer'
 import Image from 'next/image'
 
 
