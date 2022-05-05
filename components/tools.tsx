@@ -35,7 +35,7 @@ const Tools = () => (
                     
                     <span className="lg:text-5xl text-xl font-medium text-white/95 trailing-tight leading-tight " >
                     <span>
-                    `&quot;`You never done learning!`&quot;`  This true not only for CS but for everything else in life.  The tools that I use most frequently help me to optimize my workflow.</span>              
+                    &quot;You never done learning!&quot;  This true not only for CS but for everything else in life.  The tools that I use most frequently help me to optimize my workflow.</span>              
                     </span>
                     </ToolRight>  
                     
