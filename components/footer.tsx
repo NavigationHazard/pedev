@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { SocialIcon } from 'react-social-icons';
+
 
 
 const Footer: React.FC = () => {
@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <section className={'  bg-black text-xl md:text-xl text-orange-50/75'}>
           
             <div className=" mx-auto text-center justify-center items-center flex flex-col-2 space-x-4 p-10">
-            <SocialIcon url="https://www.github.com/NavigationHazard" fgColor="black" bgColor="white"/>
+           
               
             </div>
             <div className=" mx-auto text-center justify-center items-center flex   space-x-4 pb-10   border-black">
