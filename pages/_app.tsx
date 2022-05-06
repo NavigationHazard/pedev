@@ -7,7 +7,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
   <SizeObserver>
       <ScrollObserver scrollY={0}>
-          
              <Component {...pageProps} />
       </ScrollObserver>
  </SizeObserver>

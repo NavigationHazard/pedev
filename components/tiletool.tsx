@@ -1,7 +1,10 @@
+// TODO: This section is now unused, needs to be removed at somepoint as i changed the 
+// dynamic content to a static one for the tools page 
+// all tools pages can therefore be removed. 
+
 import React, { useRef, useContext,  } from "react"
-import { render } from "react-dom"
-import Image from "next/image"
 import { ScrollContext } from "../utils/scroll-observer"
+
 interface WrapperProps {
     numOfPages: number,
     children?: React.ReactNode;
@@ -12,17 +15,20 @@ interface TileContextValue {
     currentPage: number
     children?: React.ReactNode;
 }
+
 let currentPage = 0
 
 export const TileContext = React.createContext<TileContextValue>({
     numOfPages: 0,
     currentPage: 0,
 })
+
 interface Props {
     
     page: number
     renderContent: (props: { progress: number }) => any
 }
+
 export const TileTool: React.FC<Props> = ({ renderContent , page }) => {
     
     const { currentPage, numOfPages } = useContext(TileContext)
@@ -42,12 +48,8 @@ export const TileTool: React.FC<Props> = ({ renderContent , page }) => {
         </div>
     )
 }
-export const TileWrapper: React.FC<WrapperProps> = (
-    {
-        children ,
-        numOfPages
-    }
-) => {
+
+export const TileWrapper: React.FC<WrapperProps> = ({children , numOfPages}) => {
     const { scrollY } = useContext(ScrollContext)
     const refContainer = useRef<HTMLDivElement>(null)
 
@@ -71,11 +73,12 @@ export const TileWrapper: React.FC<WrapperProps> = (
 
     )
 }
+// need background that can wrap
 export const TileBackground: React.FC<WrapperProps> = ({ children }) => (
     <div className="absolute h-full w-full">{children}</div>
 )
+// needs to be sticky to stick
 export const TileContent: React.FC<WrapperProps> = ({ children }) => (
-    
     <div className="sticky top-0 h-screen overflow-hidden ">                       
     {children}</div>
     
