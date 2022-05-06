@@ -14,6 +14,8 @@ module.exports = {
             'full': '9999px',
             'large': '40px',
         },
+  
+        
         backgroundSize: {
             'auto': 'auto',
             'cover': 'cover',

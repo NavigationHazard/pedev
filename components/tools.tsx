@@ -1,6 +1,6 @@
 import React from "react"
 import { TileBackground, TileContent, TileWrapper, TileTool } from "./tiletool"
-import { ToolBackground, ToolContainer, ToolLeft, ToolLink, ToolRight } from "./tool"
+import { ToolBackground, ToolContainer, ToolLeft, ToolLink } from "./tool"
 import Image from "next/image"
 
 
@@ -30,24 +30,18 @@ const Tools = () => (
                         <Image src={`/assets/tools/nextjs.svg`} alt="nextjs" width={90} height={90}/>
                         <span className="px-5"></span>
                         <Image src={`/assets/tools/tailwind.svg`} alt="tailwind"   width={150} height={90}/></div>
+
+                       
                   </ToolLeft>
-                   <ToolRight progress={progress} >
-                    
-                    <span className="lg:text-5xl text-xl font-medium text-white/95 trailing-tight leading-tight " >
-                    <span>
-                    &quot;You never done learning!&quot;  This true not only for CS but for everything else in life.  The tools that I use most frequently help me to optimize my workflow.</span>              
-                    </span>
-                    </ToolRight>  
-                    
+   
 
                     </ToolContainer>
             )}></TileTool>
          
-           
-        
+          
         </TileContent>
     
-    </TileWrapper>
+    </TileWrapper> 
 )
 
 

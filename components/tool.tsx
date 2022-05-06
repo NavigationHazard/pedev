@@ -11,8 +11,8 @@ export const ToolContainer: React.FC<LinkProps> = ({children}) => (
     </div>
 )
 export const ToolBackground: React.FC = () => (
-    <div className="grid  sticky  lg:grid-cols-1 gird-cols-1 w-full min-h-screen  top-0">
-        <div className="bg-black/90 first-line:h-screen  lg:h-auto lg:min-h-screen px-10  "></div>
+    <div className="grid  sticky bg-orange-50 lg:grid-cols-1 gird-cols-1 w-full min-h-screen  top-0">
+        <div className="bg-black/10 first-line:h-screen  lg:h-auto lg:min-h-screen px-10  "></div>
         
     </div>
 )
@@ -21,9 +21,9 @@ export const ToolLeft: React.FC<Props> = ( { children, progress}) => {
     let translateY = Math.max(0, 200 - progress * 3 * 50)
     if( progress > 0.85) translateY = Math.max(-50, -(progress -0.85) * 2 * 50)
     return(
-         <div className="flex flex-col items-center justify-center duration-1000 bg-mb bg-center bg-no-repeat lg:h-auto h-[70vh] " 
+         <div className="flex flex-col items-center justify-center duration-1000 bg-mb bg-center bg-no-repeat lg:h-auto h-screen " 
          style={{transform: `translateY(${translateY})px` }}>
-             <div className="leading-10 lg:scale-100 scale-75  "> {children}</div>
+             <div className="leading-10 lg:scale-100 scale-75   "> {children}</div>
             </div>
     )
 }

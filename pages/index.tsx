@@ -8,6 +8,7 @@ import Skills from '../components/skills'
 import Works from '../components/works'
 import Tools from '../components/tools'
 import Footer from '../components/footer'
+import AboveFooter from '../components/abovefooter'
 
 
 
@@ -28,8 +29,9 @@ const Home: NextPage = () => {
             <Aboutme />
             <Skills />
             <Works /> 
-     
+        
             <Tools />
+            <AboveFooter/>
             <Footer />
         </div>
     )
